@@ -31,6 +31,6 @@ public class NewsListModule {
     @PerFragment
     @Provides
     public BaseQuickAdapter providerAdapter(){
-        return new newsmu
+        return new
     }
 }
