@@ -13,7 +13,7 @@ public interface IBaseView {
 
     void hideLoading();
 
-    void showNetError(EmptyLayout.OnRetryListener onRetryListener);
+    void showNetError();
 
     <T> LifecycleTransformer<T> bindToLife();
 

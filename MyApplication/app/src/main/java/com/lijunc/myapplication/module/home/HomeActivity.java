@@ -13,6 +13,7 @@ import android.widget.FrameLayout;
 
 import com.lijunc.myapplication.R;
 import com.lijunc.myapplication.module.base.BaseActivity;
+import com.lijunc.myapplication.module.news.main.NewsMainFragment;
 import com.trello.rxlifecycle2.LifecycleTransformer;
 
 import butterknife.BindView;
@@ -82,6 +83,7 @@ public class HomeActivity extends BaseActivity implements NavigationView.OnNavig
 
     @Override
     protected void updateViews(boolean isRefresh) {
-
+        mNavView.setCheckedItem(R.id.nav_news);
+        addFragment(R.id.fl_container,new NewsMainFragment(),"News");
     }
 }
